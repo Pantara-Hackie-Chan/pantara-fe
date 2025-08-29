@@ -1,18 +1,26 @@
-import { Suspense } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { UserManagement } from "@/features/users/components/user-management"
-import { UserRoles } from "@/features/users/components/user-roles"
-import { UserActivity } from "@/features/users/components/user-activity"
-import { UserInvitations } from "@/features/users/components/user-invitations"
-import { Skeleton } from "@/components/ui/skeleton"
-import { Users, Shield, Activity, UserPlus } from "lucide-react"
+import { Suspense } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { UserManagement } from "@/features/users/components/user-management";
+import { UserRoles } from "@/features/users/components/user-roles";
+import { UserActivity } from "@/features/users/components/user-activity";
+import { UserInvitations } from "@/features/users/components/user-invitations";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Users, Shield, Activity, UserPlus } from "lucide-react";
 
 export default function UsersPage() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900">Manajemen Pengguna</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+          Manajemen Pengguna
+        </h2>
         <div className="flex items-center space-x-2">
           <span className="text-sm text-gray-500">SPPG Kulkita</span>
         </div>
@@ -21,7 +29,9 @@ export default function UsersPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Pengguna</CardTitle>
+            <CardTitle className="text-sm font-medium">
+              Total Pengguna
+            </CardTitle>
             <Users className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
@@ -32,7 +42,9 @@ export default function UsersPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Pengguna Aktif</CardTitle>
+            <CardTitle className="text-sm font-medium">
+              Pengguna Aktif
+            </CardTitle>
             <Activity className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
@@ -43,7 +55,9 @@ export default function UsersPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Undangan Pending</CardTitle>
+            <CardTitle className="text-sm font-medium">
+              Undangan Pending
+            </CardTitle>
             <UserPlus className="h-4 w-4 text-orange-600" />
           </CardHeader>
           <CardContent>
@@ -79,7 +93,9 @@ export default function UsersPage() {
                 <Users className="h-5 w-5 text-green-600" />
                 Manajemen Pengguna
               </CardTitle>
-              <CardDescription>Kelola pengguna SPPG, edit profil, dan atur status akun</CardDescription>
+              <CardDescription>
+                Kelola pengguna SPPG, edit profil, dan atur status akun
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<Skeleton className="h-96 w-full" />}>
@@ -96,7 +112,9 @@ export default function UsersPage() {
                 <Shield className="h-5 w-5 text-blue-600" />
                 Role & Permission
               </CardTitle>
-              <CardDescription>Atur role pengguna dan permission akses fitur</CardDescription>
+              <CardDescription>
+                Atur role pengguna dan permission akses fitur
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<Skeleton className="h-96 w-full" />}>
@@ -113,7 +131,9 @@ export default function UsersPage() {
                 <Activity className="h-5 w-5 text-purple-600" />
                 Log Aktivitas
               </CardTitle>
-              <CardDescription>Monitor aktivitas pengguna dan audit trail sistem</CardDescription>
+              <CardDescription>
+                Monitor aktivitas pengguna dan audit trail sistem
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<Skeleton className="h-96 w-full" />}>
@@ -130,7 +150,9 @@ export default function UsersPage() {
                 <UserPlus className="h-5 w-5 text-orange-600" />
                 Undangan Pengguna
               </CardTitle>
-              <CardDescription>Kirim undangan dan kelola akses pengguna baru</CardDescription>
+              <CardDescription>
+                Kirim undangan dan kelola akses pengguna baru
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<Skeleton className="h-96 w-full" />}>
@@ -141,5 +163,5 @@ export default function UsersPage() {
         </TabsContent>
       </Tabs>
     </div>
-  )
+  );
 }
