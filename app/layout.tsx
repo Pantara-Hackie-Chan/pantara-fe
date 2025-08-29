@@ -33,11 +33,8 @@ const sourceSansPro = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kulkita",
+  title: "Pantara",
   description: "SPPG Stock Management untuk Program Makan Bergizi Gratis",
-  icons: {
-    icon: "/logo.svg",
-  },
 };
 
 export default function RootLayout({
