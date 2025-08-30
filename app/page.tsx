@@ -198,7 +198,7 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t py-4 text-center text-xs text-[#6a8573]">
-          © {new Date().getFullYear()} Kulkita. All rights reserved.
+          © {new Date().getFullYear()} Pantara. All rights reserved.
         </div>
       </footer>
     </main>
