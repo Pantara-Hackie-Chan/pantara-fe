@@ -2,8 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LoginForm } from "@/features/auth/components/login-form";
 import { RegisterForm } from "@/features/auth/components/register-form";
-import { CreateUnitForm } from "@/features/auth/components/create-unit-form";
-import { JoinUnitForm } from "@/features/auth/components/join-unit-form";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
 
@@ -15,24 +13,12 @@ export default function AuthPage() {
           <div className="relative flex items-center justify-center">
             <Image
               src={logo}
-              alt="Kulkita Logo"
-              width={68}
-              height={68}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10"
+              alt="Pantara Logo"
+              width={400}
+              height={400}
+              className="flex items-center justify-center"
             />
-
-            <h1 className="text-7xl font-bold tracking-tight text-gray-800 pl-16">
-              ulkita
-            </h1>
           </div>
-
-          <p className="text-xl text-[#333] mb-6 font-sourceSansPro">
-            Segar Terkelola, Gizi Tersalur
-          </p>
-          <p className="max-w-md text-gray-500">
-            SPPG Stock Management pertama di Indonesia untuk mendukung
-            keberlangsungan program Makan Bergizi Gratis 2025
-          </p>
         </div>
 
         <Card className="w-full max-w-md">
@@ -68,7 +54,7 @@ export default function AuthPage() {
 
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">
-            © 2025 Kulkita. Hak Cipta Dilindungi.
+            © 2025 Pantara. Hak Cipta Dilindungi.
           </p>
         </div>
       </div>

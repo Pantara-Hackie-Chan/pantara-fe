@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import logo from "@/public/logo.svg";
 
 export default function Home() {
   return (
@@ -16,9 +17,7 @@ export default function Home() {
               <nav className="flex items-center space-x-4 lg:space-x-6">
                 <div className="flex flex-col items-start justify-center">
                   <div className="relative flex items-center">
-                    <h1 className="text-3xl font-normal font-lalezar tracking-tight text-[#4CAF50]">
-                      Pantara
-                    </h1>
+                    <Image width={200} height={250} src={logo} alt="pantara" />
                   </div>
                 </div>
               </nav>
@@ -151,9 +150,7 @@ export default function Home() {
         <div className="container mx-auto grid gap-6 px-4 py-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 font-bold text-[#2e7d32]">
-              <h1 className="text-3xl font-normal font-lalezar tracking-tight text-[#4CAF50] pt-3 pl-7">
-                Pantara
-              </h1>
+              <Image width={200} height={250} src={logo} alt="pantara" />
             </div>
           </div>
           <div className="text-sm">

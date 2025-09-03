@@ -22,9 +22,7 @@ export default function DashboardLayout({
           <nav className="flex items-center space-x-4 lg:space-x-6">
             <div className="flex flex-col items-start justify-center">
               <div className="relative flex items-center">
-                <h1 className="text-4xl font-bold tracking-tight text-primary">
-                  Pantara
-                </h1>
+                <Image width={180} height={250} src={logo} alt="pantara" />
               </div>
             </div>
           </nav>
