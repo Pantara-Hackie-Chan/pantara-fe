@@ -5,6 +5,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
 import { NotificationPanel } from "@/components/notification-panel";
+import Link from "next/link";
 
 export default function DashboardLayout({
   children,
@@ -30,9 +31,9 @@ export default function DashboardLayout({
         <div className="flex flex-1 items-center justify-end space-x-4">
           <UserNav />
         </div>
-        <div>
+        <Link href="/dashboard/notification">
           <NotificationPanel />
-        </div>
+        </Link>
       </header>
       <div className="flex flex-1">
         <aside className="hidden w-64 border-r bg-background md:block">

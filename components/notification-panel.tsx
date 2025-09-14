@@ -294,7 +294,7 @@ export function NotificationPanel({
         variant="outline"
         size="icon"
         onClick={() => setIsOpen(!isOpen)}
-        className="relative bg-green-50 border-green-200 hover:bg-green-100"
+        className="relative bg-green-50 border-green-200 hover:bg-green-100 cursor-pointer"
       >
         <Bell className="h-4 w-4 text-green-600" />
         {unreadCount > 0 && (

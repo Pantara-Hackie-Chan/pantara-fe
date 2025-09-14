@@ -59,7 +59,7 @@ export async function markNotificationAsRead(notificationIds: string[]) {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify(notificationIds), 
+    body: JSON.stringify(notificationIds),
   });
   return res;
 }
